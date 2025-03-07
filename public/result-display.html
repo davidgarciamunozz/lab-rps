@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera - Pantalla de Resultados</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pantalla de Resultados</h1>
+        
+        <div class="display-area">
+            
+            <div id="players-info" class="result-section">
+                <h3>Jugadores</h3>
+                <ul id="players-list-display"></ul>
+            </div>
+            
+            <div id="game-status" class="result-section">
+                <h3>Estado del Juego</h3>
+                <p id="game-status-message">Esperando a que los jugadores hagan sus movimientos...</p>
+            </div>
+            
+            <div id="result-display" class="result-section hidden">
+                <h3>Resultado</h3>
+                <div id="result-message-display"></div>
+                <div id="result-details-display"></div>
+                
+                <div id="countdown-display-container">
+                    <p>Nuevo juego en: <span id="countdown-display">5</span> segundos</p>
+                </div>
+            </div>
+            
+            <div id="new-game-container" class="hidden">
+                <p>Se ha reiniciado el juego. Esperando a nuevos jugadores...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/result-display.js"></script>
+</body>
+</html>

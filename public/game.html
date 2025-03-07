@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera - Juego</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Piedra, Papel o Tijera</h1>
+        
+        <div class="game-area">
+            <h2>¡Haz tu movimiento, <span id="player-name"></span>!</h2>
+            
+            <div id="timer-container">
+                <p>Tiempo restante: <span id="timer">10</span> segundos</p>
+            </div>
+            
+            <div id="moves-container">
+                <div class="move" data-move="rock">
+                    <div class="move-icon">✊</div>
+                    <p>Piedra</p>
+                </div>
+                <div class="move" data-move="paper">
+                    <div class="move-icon">✋</div>
+                    <p>Papel</p>
+                </div>
+                <div class="move" data-move="scissors">
+                    <div class="move-icon">✌️</div>
+                    <p>Tijera</p>
+                </div>
+            </div>
+            
+            <div id="status-message"></div>
+            
+            <div id="waiting-opponent" class="hidden">
+                <p>Esperando a que tu oponente haga su movimiento...</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/game.js"></script>
+</body>
+</html>
